@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pais</title>
+</head>
+<body>
+    <h1>Coloque sua nacionalidade:</h1>
+    Que pais vc nasceu?<input type="text" name="txtvel" id="txtvel"> 
+    <input type="button" value="verificar" onclick="log()">
+    <div id = "res"></div>
+    <script>
+        function Text(){
+            var pais = window.document.querySelector('input#res')
+            var res = window.document.querySelector('id#res')
+            var val = Number(pais.value)
+            if (pais == 'Brasil'){
+                console.log('Você é Brasileiro!')
+            } else {
+                console.log('Você é Estrageiro!')
+            }
+        }
+    </script>
+</body>
+</html>
